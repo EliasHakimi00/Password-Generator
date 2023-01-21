@@ -139,6 +139,17 @@ function generatePassword() {
     return
   }
 
+  // Ensure password is at least 10 characters but no more than 64.
+  if(options.length < 10) {
+    alert("Choose a greater length of characters for the password.")
+    return
+  }
+
+  if(options.length > 64) {
+    alert("Choose a shorter length of characters for the password.")
+    return
+  }
+
   // generate the password
   for (var i = 0; i < options.length; i++) {
     var randomIndex = Math.floor(Math.random() * possibleCharacters.length);
