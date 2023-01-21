@@ -6,74 +6,17 @@ This week’s challenge requires you to create an application that an employee c
 
 The password can include special characters. If you’re unfamiliar with these, see this [list of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters).
 
-## Instructions
+This is the Week 5 password generator challenge. I think this challenge was helpful for getting me more used to Javascript, especially in relation to the queryselector method. This challenge took me quite a long time to get through becuase there were a lot of errors I kept making. For example, it took me a long time to realise that I should be parseInt for the prompt on line 93 to convert the string into a numerical value. I also thought that instead of having to store getPasswordOptions() in the options() variable, I could just call getPasswordOptions() by itself, eliminating the need for line 113, but I then realised that I needed it as I otherwise wouldn't be able to store properties of the returned object throughout the rest of the code. Overall, this challenge was quite helpful in further demonstrating the importance of storing returned values in variables, if statements, console.log, alerts and the queryselector.
 
-The following image shows the web application's appearance and functionality:
-
-![password generator demo](./assets/05-javascript-challenge-demo.png)
+The link to the published github pages site:
 
 
-* Generate a password when the button is clicked
-  * Present a series of prompts for password criteria
-    * Length of password
-      * At least 8 characters but no more than 128.
-    * Character types
-      * Lowercase
-      * Uppercase
-      * Numeric
-      * Special characters ($@%&*, etc)
-  * Code should validate for each input and at least one character type should be selected
-  * Once prompts are answered then the password should be generated and displayed in an alert or written to the page
+Installation
+N/A
 
-## Grading Requirements
+Credits
+Trilogy Bootcamp instructors and TAs for their guidance during the lessons.
 
-This challenge is graded based on the following criteria: 
+License
+Please refer to the licence in the repo
 
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * The challenge should not produce any errors in the console when you inspect it using Chrome DevTools.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
